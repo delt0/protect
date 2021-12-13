@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/datalist.css">
   <link rel="stylesheet" href="../css/style.css">
 
   <title>PhishFort | Protect</title>
@@ -56,10 +57,9 @@
           <a href="#" id="reportCurrent"><span class="small pull-right mt-1">Report current site</span></a>
         </div>
         <div class="form-group">
-          <label for="target">Target Brand</label>
-          <input class="inputStyle" list="targets" name="target" id="target" placeholder="e.g. myetherwallet.com">
-          <datalist id="targets">
-          </datalist>
+          <label for="targets">Target Brand</label>
+          <input class="inputStyle" type="hidden" name="target" id="target" placeholder="e.g. myetherwallet.com">
+          <select id="targets"></select>
         </div>
         <div class="form-group">
           <select id="typeDropdown" required>
@@ -111,7 +111,8 @@
     </footer>
   </div>
 
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="../js/datalist.js"></script>
   <script src="../js/report.js"></script>
 </body>
-
 </html>

@@ -24,6 +24,7 @@ reportCurrent.addEventListener('click', function () {
 background.whitelist.forEach(function (item) {
   var option = document.createElement('option');
   option.value = item;
+  option.textContent = item;
   list.appendChild(option);
 });
 
@@ -98,3 +99,6 @@ if (typeof localStorage["address"] !== 'undefined') {
 function shortenAddress(address) {
   return address.substring(0, 4) + "..." + address.substring(address.length - 2, address.length);
 }
+
+// Jquery datalist plugin
+$('#targets').dataList({return_mask:'text', value_selected_to:'target', clearOnFocus: true, loadingMessage: 'e.g. myetherwallet.com'});

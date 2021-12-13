@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 0 5px 5px 0;
 }
 
-.inputStyle {
+.inputStyle, #targets {
   box-shadow: none;
   height: 40px !important;
   padding: 10px 15px;
