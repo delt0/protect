@@ -42,7 +42,7 @@ function recaptchaCallback() {
   let incident = {
     incidentType: dropdown.options[dropdown.selectedIndex].value,
     url: url,
-    target: getDNSNameFromURL(document.getElementById("target").value),
+    target: getDNSNameFromURL(document.getElementById("targets").value),
     reportedBy: localStorage["address"] ? localStorage["address"] : "anonymous"
   }
   
